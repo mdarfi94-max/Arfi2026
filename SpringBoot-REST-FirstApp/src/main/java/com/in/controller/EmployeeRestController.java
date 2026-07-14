@@ -12,6 +12,7 @@ public class EmployeeRestController {
 
 	@GetMapping("/show")
 	public ResponseEntity<String> show(){
+		System.out.println("sonu");
 		String body="this is Spring Rest App";
 		ResponseEntity<String> res=new ResponseEntity<String>(body,HttpStatus.OK);
 		return res;	
